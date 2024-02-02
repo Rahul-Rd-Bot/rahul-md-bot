@@ -1,15 +1,15 @@
 {
-    "name": "Jarvis",
-    "version": "0.6.9",
+    "name": "Rahul",
+    "version": "0.1.1",
     "description": "A simple WhatsApp Bot Based On WhiskeySockets/Baileys",
     "main": "index.js",
     "scripts": {
-        "start": "pm2 start . --attach --name jarvis",
-        "stop": "pm2 stop jarvis"
+        "start": "pm2 start . --attach --name rahul",
+        "stop": "pm2 stop rahul"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Loki-Xer/Jarvis-md.git"
+        "url": "git+https://github.com/Rahul-Rd-Bot/rahul-md-bot.git"
     },
     "dependencies": {
         "@adiwajshing/keyed-db": "^0.2.4",
@@ -19,7 +19,7 @@
         "axios": "^0.24.0",
         "pm2": "^5.2.0",
         "awesome-phonenumber": "^6.4.0",
-        "jarvis-md": "^1.0.0",
+        "rahul-md-bot": "^0.1.1",
         "browser-id3-writer": "^4.4.0",
         "cheerio": "^1.0.0-rc.10",
         "crypto-js": "^4.1.1",
