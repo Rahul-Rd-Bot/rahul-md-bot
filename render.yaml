@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: jarvis-md
+    name: rahul-md-bot
     env: node
     branch: main
-    repo: https://github.com/Loki-Xer/jarvis-md.git
+    repo: https://github.com/Rahul-Rd-Bot/rahul-md-bot.git
     buildCommand: npm install
     startCommand: npm start
     plan: free
@@ -12,13 +12,13 @@ services:
       - key: SESSION_ID
         sync: false
       - key: BOT_INFO
-        value: ᴊᴀʀᴠɪꜱ;ʟᴏᴋɪ-xᴇʀ;https://i.imgur.com/VIpl3q5.mp4
+        value: ʀᴀʜᴜʟ;ʀᴀʜᴜʟ;https://i.imgur.com/1PvEqb8.jpeg
       - key: WARN_COUNT
         value: 3
       - key: AUTO_STATUS_VIEWS
         value: false
       - key: MEDIA_DATA
-        value: ʟɪꜱᴛ ᴍᴇɴᴜ;ᴊᴀʀᴠɪꜱ-ᴍᴅ;https://i.imgur.com/ltPPMTh.jpeg
+        value: ʀᴀʜᴜʟ;ʀᴀʜᴜʟ;https://i.imgur.com/1PvEqb8.jpeg
       - key: HANDLER
         value: /
       - key: WORK_TYPE
@@ -26,11 +26,11 @@ services:
       - key: SERVER
         value: render
       - key: STICKER_PACKNAME
-        value: ʟᴏᴋɪ;xᴇʀ
+        value: ʀᴀʜᴜʟ
       - key: AUDIO_DATA
-        value: ʟᴏᴋɪ-xᴇʀ;ᴊᴀʀᴠɪꜱ;https://i.imgur.com/VgxJeCm.jpeg
+        value: ʀᴀʜᴜʟ;ʀᴀʜᴜʟ;https://i.imgur.com/1PvEqb8.jpeg
       - key: SUDO
-        value: 917025673121
+        value: 919547261290
       - key: SERVERURL
         value:
       - key: DATABASE_URL
