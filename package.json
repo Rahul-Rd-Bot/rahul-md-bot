@@ -19,7 +19,7 @@
         "axios": "^0.24.0",
         "pm2": "^5.2.0",
         "awesome-phonenumber": "^6.4.0",
-        "rahul-md-bot": "^0.1.1",
+        "rahul-md-bot": "^1.0.0",
         "browser-id3-writer": "^4.4.0",
         "cheerio": "^1.0.0-rc.10",
         "crypto-js": "^4.1.1",
