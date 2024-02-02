@@ -35,7 +35,7 @@ System({
     if (server !== "heroku") return await message.reply("_shutdown only works in Heroku_");
     
     await heroku.get(baseURI + "/formation").then(async (formation) => {
-        await message.send(`_Jarvis is shutting down..._`);
+        await message.send(`_Rahul is shutting down..._`);
         await heroku.patch(baseURI + "/formation/" + formation[0].id, {
             body: { quantity: 0 },
         });
@@ -55,13 +55,13 @@ System({
 },
 async (message, match) => {
     if (!match)
-        return await message.send(`Example: .setvar SUDO:917025673121`);
+        return await message.send(`Example: .setvar SUDO:919547261290`);
     
     const key = match.slice(0, match.indexOf(':')).trim();
     const value = match.slice(match.indexOf(':') + 1).trim();
     
     if (!key || !value)
-        return await message.send(`Example: .setvar SUDO:917025673121`);
+        return await message.send(`Example: .setvar SUDO:919547261290`);
         
     if (server !== "heroku" && server !== "koyeb") {
         return await message.reply("_setvar only works in Heroku or Koyeb_");
@@ -268,7 +268,7 @@ async (message, match) => {
 
     if (match == "now") {
         if (commits.total === 0) {
-            return await message.send(`_Jarvis is on the latest version: v${version}_`);
+            return await message.send(`_Rahul is on the latest version: v${version}_`);
         } else {
             if (server === "heroku") {
                 await updateBot(message);
@@ -285,9 +285,9 @@ async (message, match) => {
             }
         }
     } else if (commits.total === 0) {
-            return await message.send(`_Jarvis is on the latest version: v${version}_`);
+            return await message.send(`_Rahul is on the latest version: v${version}_`);
         } else {
-        var availupdate = "*Updates available for Jarvis-md* \n\n";
+        var availupdate = "*Updates available for rahul-md* \n\n";
         commits["all"].map((commit, num) => {
             availupdate += num + 1 + " ●  " + tiny(commit.message) + "\n";
         });
