@@ -1,5 +1,19 @@
-FROM quay.io/rahul-rd-bot/rahul-md-bot:latest
-RUN git clone https://github.com/Rahul-Rd-Bot/jrahul-md-bot /root/rahul-md-bot/
-WORKDIR /root/rahul-md-bot/
-RUN yarn install --network-concurrency 1
-CMD ["npm", "start"]
+FROM node:lts-buster
+
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
+
+COPY package.json .
+
+RUN npm install && npm install qrcode-terminal
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "index.js", "--server"]
